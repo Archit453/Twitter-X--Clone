@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@layer base {
+  li {
+     @apply flex text-xl gap-3 font-semibold items-center;
+  }
+  svg{
+    @apply w-5 hover:cursor-pointer  text-blue-500 fill-current;
+  }
+  h1{
+    @apply flex-1 font-bold text-xl;
+  }
+}
+
+@layer components {
+  .nav-img {
+    @apply w-[24px];
+  }
+  .top-name{
+    @apply  flex-1/2 flex justify-center items-center text-gray-700 text-[min(10vw,16px)] font-bold hover:bg-gray-100;
+  }
+  .card{
+    @apply border-gray-100 border-1 flex flex-col rounded-2xl ;
+  }
+  .hover-effect{
+    @apply hover:bg-gray-100 cursor-pointer transition-colors;
+  }
+  .hover-object{
+    @apply p-4;
+  }
+ .to-hide {
+  @apply max-xl:hidden
+  }
+}
+
